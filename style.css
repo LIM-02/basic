@@ -1,8 +1,15 @@
-/* General styles */
-body {
+
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Flexbox layout for body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
 }
 
 /* Header styles */
@@ -21,14 +28,8 @@ header .logo img {
 
 header .nav-menu ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     gap: 15px;
-}
-
-header .nav-menu ul li {
-    display: inline;
 }
 
 header .nav-menu ul li a {
@@ -37,11 +38,7 @@ header .nav-menu ul li a {
     font-weight: bold;
 }
 
-header .nav-menu ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Main content styles */
+/* Main content */
 main {
     background-color: white;
     padding: 20px;
@@ -53,15 +50,11 @@ footer {
     background-color: gray;
     color: white;
     text-align: center;
-    padding: 10px 20px;
-    position: relative;
+    padding: 10px 0;
+    margin-top: auto; 
 }
 
 footer a {
     color: white;
     text-decoration: underline;
-}
-
-footer a:hover {
-    text-decoration: none;
 }
